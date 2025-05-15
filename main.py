@@ -11,7 +11,7 @@ import streamlit as st
 from streamlit_extras.metric_cards import style_metric_cards
 
 st.set_page_config(
-    page_title="Email verification",
+    page_title="Email verification ",
     page_icon="✅",
     layout="centered",
 )
@@ -102,7 +102,7 @@ def main():
     with open('style.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
         
-    st.title("Email Verification Tool", help="This tool verifies the validity of an email address.")
+    st.title("Email Verification Tool Testing Mode", help="This tool verifies the validity of an email address.")
     st.info("The result may not be accurate. However, it has 90% accuracy.")
 
     t1, t2= st.tabs(["Single Email", "Bulk Email Processing"])
